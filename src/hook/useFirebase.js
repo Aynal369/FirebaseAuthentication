@@ -128,7 +128,6 @@ const useFirebase = () => {
       .then(() => {
         setUsers({});
         setIsLoggedIn(false);
-        localStorage.removeItem("accessToken");
       })
       .catch((error) => {
         // An error happened.

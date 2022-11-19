@@ -8,10 +8,10 @@ const RequireAuth = ({ children }) => {
   let location = useLocation();
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p className="text-center display-6 mt-4">Hello</p>;
   }
 
-  if (users.email) {
+  if (users?.email) {
     return children;
   }
 
